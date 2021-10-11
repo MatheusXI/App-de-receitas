@@ -93,13 +93,14 @@ const Header = ({ pageName, hasLupa }) => {
       <nav className="header">
         <Link to="/perfil">
           <img
+            className="profile-icon"
             src={ profileIcon }
             alt="profile"
             data-testid="profile-top-btn"
           />
         </Link>
-        <h2 data-testid="page-title">{ pageName }</h2>
-        <button type="button" onClick={ showSearchBar }>
+        <h2 data-testid="page-title" className="title">{ pageName }</h2>
+        <button className="lupa" type="button" onClick={ showSearchBar }>
           <img
             data-testid="search-top-btn"
             src={ searchIcon }
@@ -115,12 +116,13 @@ const Header = ({ pageName, hasLupa }) => {
     <nav className="header">
       <Link to="/perfil">
         <img
+          className="profile-icon"
           src={ profileIcon }
           alt="profile"
           data-testid="profile-top-btn"
         />
       </Link>
-      <h2 data-testid="page-title">{ pageName }</h2>
+      <h2 data-testid="page-title" className="title">{ pageName }</h2>
     </nav>
   );
 

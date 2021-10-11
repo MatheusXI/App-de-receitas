@@ -32,7 +32,7 @@ const Filters = ({ alimento }) => {
   if (alimento.length === 0) return (<Loading />);
 
   return (
-    <div>
+    <div className="filter-btn">
       <button
         name="all"
         data-testid="All-category-filter"

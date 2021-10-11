@@ -9,6 +9,7 @@ const Card = ({ alimento, tipo, chave }) => {
   const rota = tipo === 'Meal' ? `/comidas/${idAlimento}` : `/bebidas/${idAlimento}`;
   return (
     <Link
+      className="card"
       to={ {
         pathname: rota,
         state: { alimento },

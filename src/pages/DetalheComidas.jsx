@@ -84,7 +84,7 @@ const DetalheComidas = ({ match: { params: { id }, url }, history }) => {
   };
 
   return (foodDetail.length === 0 && drinksDetails.length === 0) ? <Loading /> : (
-    <div>
+    <div className="recipe-details">
       <img
         data-testid="recipe-photo"
         src={ strMealThumb }
@@ -125,16 +125,6 @@ const DetalheComidas = ({ match: { params: { id }, url }, history }) => {
                   { ingredient }
                 </li>))}
           </ul>
-          {/* <ul>
-            {ingredientMeasures(foodDetail, 'medida')
-              .map((measure, i) => (
-                <li
-                  data-testid={ `${i}-ingredient-name-and-measure` }
-                  key={ i }
-                >
-                  { measure }
-                </li>))}
-          </ul> */}
         </div>
       </section>
       <p data-testid="instructions">{strInstructions}</p>
@@ -151,7 +141,7 @@ const DetalheComidas = ({ match: { params: { id }, url }, history }) => {
       <Slider { ...settings }>
         {drinksDetails
           .map(({ strDrinkThumb, strDrink, strCategory: strDrikCategory }, i) => (
-            <section key={ i } data-testid={ `${i}-recomendation-card` }>
+            <section className="carrosel-sec" key={ i } data-testid={ `${i}-recomendation-card` }>
               <img
                 width="100"
                 height="100"
