@@ -113,7 +113,7 @@ const Header = ({ pageName, hasLupa }) => {
   );
 
   const withoutSearchIMG = (
-    <nav className="header">
+    <nav className="header-2">
       <Link to="/perfil">
         <img
           className="profile-icon"

@@ -8,8 +8,8 @@ export default function Profile() {
     localStorage.clear();
   };
   return (
-    <div className="explore">
-      <span data-testid="profile-email">{ email }</span>
+    <div className="profile">
+      <span className="email" data-testid="profile-email">{ email }</span>
       <Link to="/receitas-feitas">
         <button
           type="button"

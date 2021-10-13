@@ -13,9 +13,9 @@ const CardFavorite = () => {
   }, []);
 
   return (
-    <div>
+    <div className="create-card">
       {favs.map((fav, index) => (
-        <div className="main" key={ index }>
+        <div className="card" key={ index }>
           <img
             src={ fav.image }
             alt={ fav.name }
@@ -29,25 +29,27 @@ const CardFavorite = () => {
             {` ${fav.area} - ${fav.category}` }
           </p>
           <p data-testid={ `${index}-horizontal-top-text` }>{fav.alcoholicOrNot}</p>
-          <button
-            type="button"
-          >
-            <img
-              data-testid={ `${index}-horizontal-share-btn` }
-              src={ Share }
-              alt="btn share"
-            />
-          </button>
-          <button
-            className="fav"
-            type="button"
-          >
-            <img
-              data-testid={ `${index}-horizontal-favorite-btn` }
-              src={ BlackHeart }
-              alt="btn Fav"
-            />
-          </button>
+          <div className="fav-share">
+            <button
+              type="button"
+            >
+              <img
+                data-testid={ `${index}-horizontal-share-btn` }
+                src={ Share }
+                alt="btn share"
+              />
+            </button>
+            <button
+              className="fav"
+              type="button"
+            >
+              <img
+                data-testid={ `${index}-horizontal-favorite-btn` }
+                src={ BlackHeart }
+                alt="btn Fav"
+              />
+            </button>
+          </div>
         </div>
       ))}
     </div>
