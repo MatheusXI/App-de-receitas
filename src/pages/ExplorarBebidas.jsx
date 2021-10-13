@@ -6,7 +6,7 @@ import ExploreAliment from '../components/ExploreAliment';
 const ExplorarBebida = () => (
   <>
     <Header hasLupa={ false } pageName="Explorar Bebidas" />
-    <div className="main">
+    <div className="explore">
       <ExploreAliment tipo="bebidas" />
     </div>
     <Footer />

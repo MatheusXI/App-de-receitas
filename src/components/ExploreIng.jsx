@@ -22,9 +22,9 @@ const ExploreIng = ({ tipo }) => {
   const siteAlimento = tipo === 'comidas' ? 'themealdb' : 'thecocktaildb';
 
   return ingredientes.lenght === 0 ? <Loading /> : (
-    <div>
+    <div className="create-card">
       {ingredientes.map((ingredient, index) => (
-        <div data-testid={ `${index}-ingredient-card` } key={ index }>
+        <div className="card" data-testid={ `${index}-ingredient-card` } key={ index }>
           <img
             alt={ ingredient[ingredientTipo] }
             data-testid={ `${index}-card-img` }

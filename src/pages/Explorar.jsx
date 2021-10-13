@@ -6,7 +6,7 @@ import Header from '../components/Header';
 const Explorar = () => (
   <div>
     <Header pageName="Explorar" hasLupa={ false } />
-    <div className="main">
+    <div className="explore">
       <Link to="/explorar/comidas">
         <button data-testid="explore-food" type="button"> Explorar Comidas</button>
       </Link>

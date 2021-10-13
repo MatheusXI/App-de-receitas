@@ -1,7 +1,7 @@
 body {
   height: 100%;
   overflow: auto;
-  background-color: #9E0104;
+  background-color: #9e0104;
 }
 
 .imageFood {
@@ -10,7 +10,7 @@ body {
 }
 
 .footer {
-  background-color: #E62E31;
+  background-color: #e62e31;
   bottom: 0;
   display: flex;
   justify-content: space-around;
@@ -19,11 +19,11 @@ body {
 }
 
 .footer img {
-  filter: invert(100%)
+  filter: invert(100%);
 }
 
 .header {
-  background-color: #E62E31;
+  background-color: #e62e31;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -41,7 +41,7 @@ body {
 }
 
 .lupa img {
-  filter: invert(100%)
+  filter: invert(100%);
 }
 
 .title {
@@ -99,7 +99,7 @@ body {
   height: 80%;
   margin: auto;
   margin-top: 5%;
-  background-color: #E62E31;
+  background-color: #e62e31;
   justify-content: space-around;
   font-family: monospace;
   border-radius: 10%;
@@ -127,7 +127,7 @@ body {
   font-size: large;
   border-radius: 10%;
   box-shadow: whitesmoke;
-  background-color: #0F9935;
+  background-color: #0f9935;
   color: whitesmoke;
 }
 
@@ -145,8 +145,16 @@ body {
   font-size: x-large;
   border-radius: 10%;
   box-shadow: whitesmoke;
-  background-color: #0F9935;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.filter-btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
 }
 
 .create-card {
@@ -194,8 +202,36 @@ body {
 
 .recipe-details img {
   width: 100%;
+  height: 10%;
 }
 
 .carrosel-sec img {
   width: 90%;
+}
+
+.process {
+  color: whitesmoke;
+}
+
+.process button {
+  color: black;
+}
+
+.process img {
+  width: 100%;
+  height: 10%;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+  flex-wrap: wrap;
+}
+
+.explore button {
+  border-radius: 10px;
+  font-size: large;
+  width: 200px;
+  height: 50px;
 }

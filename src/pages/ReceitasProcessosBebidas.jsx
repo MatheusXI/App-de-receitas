@@ -84,7 +84,7 @@ const ReceitasProcessosBebidas = ({ match: { params: { id } }, history }) => {
   };
 
   return (drinkDetail.length === 0) ? <Loading /> : (
-    <div>
+    <div className="process">
       <img
         data-testid="recipe-photo"
         src={ strDrinkThumb }
